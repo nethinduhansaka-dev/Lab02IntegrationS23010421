@@ -59,7 +59,7 @@
                 android:layout_marginEnd="8dp"
                 android:background="@drawable/rounded_secondary_button"
                 android:elevation="6dp"
-                android:text="Show Location"
+                android:text="Find"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
