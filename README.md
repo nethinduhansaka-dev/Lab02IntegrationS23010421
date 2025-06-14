@@ -2,7 +2,7 @@
 
 ## 📱 Overview
 
-VPN Hansaka is a comprehensive Android application developed as part of the EEI4369 Mobile Application Development lab test. The app demonstrates integration of multiple Android components including multimedia, Google Maps, sensor monitoring, and SQLite database management within a single cohesive application.
+This is a comprehensive Android application developed as part of the EEI4369 Mobile Application Development lab test. The app demonstrates integration of multiple Android components including multimedia, Google Maps, sensor monitoring, and SQLite database management within a single cohesive application.
 
 ## ✨ Features
 
@@ -45,7 +45,7 @@ VPN Hansaka is a comprehensive Android application developed as part of the EEI4
 - **UI:** ConstraintLayout, Material Design Components
 - **Multimedia:** MediaPlayer, VideoView
 - **Minimum SDK:** API 24 (Android 7.0)
-- **Target SDK:** API 34
+- **Target SDK:** API 35
 
 ## 📋 Prerequisites
 
@@ -136,59 +136,14 @@ app/src/main/
 | USERNAME | TEXT | User's chosen username |
 | PASSWORD | TEXT | User's password |
 
-## 🖼️ Screenshots
 
-*Screenshots will be included in the lab report as per requirements:*
-
-- Lab 01: Android Studio New Project Wizard & First Running UI
-- Lab 02: Multimedia Integration with Login Interface
-- Lab 03: Google Maps with Address Search & Location Display
-- Lab 04: Temperature Sensor UI with Alert System
-- Lab 05: Database Operations with Toast Confirmations
-
-## 🎥 Demo Video
-
-A comprehensive screencast demonstration is available showing:
-- Complete app navigation flow
-- Map location search functionality
-- Temperature sensor threshold testing
-- Database operations and confirmations
-
-**Video Link:** [Insert your Google Drive shareable link here]
-
-*Note: Video duration is under 2 minutes as per lab requirements*
-
-## 🧪 Testing Instructions
-
-### Functional Testing
-1. **Login Flow:** Test with various credential combinations
-2. **Maps:** Search different addresses and verify location accuracy
-3. **Sensor:** Test threshold alerts using simulation or virtual sensors
-4. **Database:** Verify data persistence across app sessions
 
 ### Device Compatibility
 - Tested on Android API 24+ devices
 - Supports both emulator and physical device testing
 - Temperature sensor functionality varies by device hardware
 
-## 📝 Lab Requirements Compliance
 
-✅ **Lab 01:** Android project creation with proper configuration  
-✅ **Lab 02:** Multimedia integration (video, audio, images)  
-✅ **Lab 03:** Google Maps with geocoding functionality  
-✅ **Lab 04:** Temperature sensor with offline audio alerts  
-✅ **Lab 05:** SQLite database with Toast confirmations  
-✅ **Integration:** Single project with seamless navigation  
-✅ **Code Quality:** Professional standards and best practices  
-
-## 👨‍💻 Development Information
-
-- **Student ID:** S23010421
-- **Course:** EEI4369 - Mobile Application Development
-- **Academic Year:** 2024/2025
-- **Institution:** The Open University of Sri Lanka
-- **Faculty:** Engineering Technology
-- **Department:** Electrical and Computer Engineering
 
 ## 🤝 Contributing
 
@@ -206,10 +161,10 @@ This project is developed for educational purposes as part of EEI4369 lab test r
 
 ## 📞 Contact
 
-- **Developer:** [Your Name]
-- **Email:** [Your University Email]
+- **Developer:**V.P.N.Hansaka
+- **Email:** S23010421@ousl.lk
 - **Student ID:** S23010421
-- **GitHub:** [@your-username](https://github.com/your-username)
+- **GitHub:** https://github.com/nethinduhansaka
 
 ## 🙏 Acknowledgments
 
