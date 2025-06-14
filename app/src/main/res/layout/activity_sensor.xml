@@ -2,74 +2,128 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_image">
+    android:background="@drawable/background_temperature"
+    android:padding="24dp">
 
+    <!-- Header -->
     <TextView
         android:id="@+id/tvSensorTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Temperature Sensor"
+        android:text="Temperature Monitor"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Temperature Display -->
     <TextView
         android:id="@+id/tvTemperatureValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="48dp"
         android:text="0.0°C"
+        android:textColor="@android:color/holo_blue_dark"
         android:textSize="48sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSensorTitle" />
 
+    <!-- Status -->
     <TextView
-        android:id="@+id/tvThresholdLabel"
+        android:id="@+id/tvTemperatureStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Threshold:"
-        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:text="Normal Range"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTemperatureValue" />
 
-    <TextView
-        android:id="@+id/tvThresholdValue"
+    <!-- Threshold Info -->
+    <LinearLayout
+        android:id="@+id/thresholdLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="XX°C"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvThresholdLabel" />
-
-    <ImageView
-        android:id="@+id/ivSensorIcon"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
         android:layout_marginTop="32dp"
-        android:src="@drawable/temperature_icon"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvThresholdValue" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTemperatureStatus">
 
+        <TextView
+            android:id="@+id/tvThresholdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Threshold"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvThresholdValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="21°C"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Sensor Status -->
+    <TextView
+        android:id="@+id/tvSensorInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Initializing sensors..."
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thresholdLayout" />
+
+    <!-- Control Button -->
     <Button
         android:id="@+id/btnSimulate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:text="Simulate Temperature Change"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Simulate Temperature"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivSensorIcon" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSensorInfo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="198dp"
+        android:layout_height="126dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921"
+        app:srcCompat="@drawable/temperature_icon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
