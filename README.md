@@ -58,7 +58,7 @@ This is a comprehensive Android application developed as part of the EEI4369 Mob
 ## 🚀 Installation & Setup
 
 ### 1. Clone the Repository
- - git clone https://github.com/[your-username]/vpnhansaka-lab-test.git
+ - git clone https://github.com/nethinduhansaka-dev/Lab02IntegrationS23010421.git
  - cd vpnhansaka-lab-test
 
 
@@ -164,7 +164,7 @@ This project is developed for educational purposes as part of EEI4369 lab test r
 - **Developer:**V.P.N.Hansaka
 - **Email:** S23010421@ousl.lk
 - **Student ID:** S23010421
-- **GitHub:** https://github.com/nethinduhansaka
+- **GitHub:** [https://github.com/nethinduhansaka](https://github.com/nethinduhansaka-dev)
 
 ## 🙏 Acknowledgments
 
