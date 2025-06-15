@@ -1,4 +1,4 @@
-# VPN Hansaka - EEI4369 Mobile Application Development Lab Test
+# VPN Hansaka [s23010421] - EEI4369 Mobile Application Development Lab Test
 
 ## 📱 Overview
 
